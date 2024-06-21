@@ -26,3 +26,36 @@ a, .btn{
 nav, .nav-itens{
     display: flex;
 }
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-itens{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.nome_nav{
+    font-size: 2rem;
+}
+
+.nome_nav:hover{
+    cursor: default;
+}
