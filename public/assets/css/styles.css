@@ -97,3 +97,44 @@ a:hover{
     overflow: hidden;
     transition: all 0.3 ease-in-out;
 }
+
+.menu-itens a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-itens li{
+    list-style: none;
+}
+
+.menu-itens.open{
+    max-height: 300px;
+}
+
+.menu-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.menu-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.menu-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.menu-icon span:first-child{
+    transform: none;
+}
+
+.menu-icon span:first-child{
+    opacity: 1;
+}
+
+.menu-icon span:first-child{
+    transform: none;
+}
+
