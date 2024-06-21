@@ -59,3 +59,23 @@ a:hover{
 .nome_nav:hover{
     cursor: default;
 }
+
+/* Menu Mobile */
+
+#nav-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
