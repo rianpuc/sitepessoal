@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
     function ColegaDeTrabalho(colega) {
         const colegasSection = document.getElementById('colegas_section');
         const colegaCard = document.createElement('div');
-        colegaCard.className = 'col-lg-4 col-md-6 col-sm-12 mb-4';
+        colegaCard.className = 'col-12 col-md-6 col-lg-4';
         colegaCard.innerHTML = `
             <div class="card h-100">
                 <img class="card-img-top" src="${colega.fotoUrl}" alt="Foto de ${colega.nome}">
                 <div class="card-body">
                     <h4 class="card-title">${colega.nome}</h4>
-                    <p class="card-text">GitHub: <a href="${colega.githubUrl}" target="_blank">${colega.githubUrl}</a></p>
+                    <p class="card-text">GitHub: </p><p><a href="${colega.githubUrl}" target="_blank">Acessar</a></p>
                 </div>
             </div>
         `;
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         data.forEach(repo => {
             const repoElement = document.createElement('div');
             const descricao = cortarTexto(repo.description || 'Sem descrição', 20);
-            repoElement.className = 'col-lg-4 col-md-6 col-sm-12 mb-4';
+            repoElement.className = 'col-12 col-md-6 col-lg-4';
             repoElement.innerHTML = `
                 <div class="card h-100">
                     <div class="card-body">

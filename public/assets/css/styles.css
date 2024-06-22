@@ -143,10 +143,8 @@ a:hover{
 
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    margin: 0 5rem;
     box-sizing: border-box;
-    /*min-height: fit-content;*/
 }
 
 /* Perfil Secao */
@@ -214,17 +212,21 @@ section {
 /* Repositorios */
 
 .title {
-    text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 20px;
 }
 
+#repositorios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 #repositorios_section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    align-content: center;
 }
 
 .card {
@@ -232,11 +234,8 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 15px;
-    margin-left: 15px;
     transition: box-shadow 0.3s ease-in-out;
-    margin-bottom: 20px;
-    text-align: center;
+    overflow: hidden;
 }
 
 .card h2 {
@@ -251,16 +250,20 @@ section {
 
 .card a {
     display: inline-block;
-    margin-top: 15px;
+    padding: 10px;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .card-body{
     max-height: 200px;
     overflow: hidden;
+}
+
+div.col{
+    margin-bottom: 10px;
 }
 
 /* Carousel */
