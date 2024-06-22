@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site Pessoal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/mediaqueries.css" />
   </head>
@@ -37,11 +38,11 @@
     </nav>
     <section id="perfil">
         <div class="foto_de_perfil">
-            <img src="assets/img/foto.png" alt="Foto de Perfil">
+            <img id="avatar" src="" alt="Foto de Perfil">
         </div>
         <div class="apresentacao">
-            <p class="apresentacao_p1">Meu nome é Rian</p>
-            <p class="apresentacao_p2">Odeio fazer site e so gosto de fazer o backend</p>
+            <p id="nome" class="apresentacao_p1"></p>
+            <p id="descricao" class="apresentacao_p2"></p>
             <p class="apresentacao_p2"><span>Localização:</span> Belo Horizonte, MG</p>
             <div id="redes-container">
                 <img src="assets/img/linkedin.png" alt="Perfil Linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/rian-eduardo-dias-lopes-4296511b7/'">
@@ -50,6 +51,13 @@
             </div>
         </div>
     </section>
+    <section id="repositorios">
+        <h1 class="title">Repositorios</h1>
+        <div id="repositorios_section" class="row"></div>
+    </section>
     <script src="assets/scripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

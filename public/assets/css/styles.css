@@ -148,6 +148,8 @@ section {
     min-height: fit-content;
 }
 
+/* Perfil Secao */
+
 #perfil {
     display: flex;
     justify-content: center;
@@ -206,4 +208,48 @@ section {
 .icon{
     cursor: pointer;
     height: 2rem;
+}
+
+/* Repositorios */
+
+.title {
+    text-align: center;
+    padding: 20px;
+}
+
+#repositorios_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
