@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site Pessoal</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/mediaqueries.css" />
   </head>
@@ -29,31 +32,56 @@
           <span></span>
         </div>
         <div class="menu-itens">
-            <li><a href="#perfil" onclick="toggleMenu()">Perfil</a></li>
-            <li><a href="#repositorios" onclick="toggleMenu()">Repositorios</a></li>
-            <li><a href="#conteudo-sugerido" onclick="toggleMenu()">Conteudo Sugerido</a></li>
-            <li><a href="#colegas" onclick="toggleMenu()">Colegas de Trabalho</a></li>
+          <li><a href="#perfil" onclick="toggleMenu()">Perfil</a></li>
+          <li>
+            <a href="#repositorios" onclick="toggleMenu()">Repositorios</a>
+          </li>
+          <li>
+            <a href="#conteudo-sugerido" onclick="toggleMenu()"
+              >Conteudo Sugerido</a
+            >
+          </li>
+          <li>
+            <a href="#colegas" onclick="toggleMenu()">Colegas de Trabalho</a>
+          </li>
         </div>
       </div>
     </nav>
     <section id="perfil">
-        <div class="foto_de_perfil">
-            <img id="avatar" src="" alt="Foto de Perfil">
+      <div class="foto_de_perfil">
+        <img id="avatar" src="" alt="Foto de Perfil" />
+      </div>
+      <div class="apresentacao">
+        <p id="nome" class="apresentacao_p1"></p>
+        <p id="descricao" class="apresentacao_p2"></p>
+        <p class="apresentacao_p2">
+          <span>Localização:</span> Belo Horizonte, MG
+        </p>
+        <div id="redes-container">
+          <img
+            src="assets/img/linkedin.png"
+            alt="Perfil Linkedin"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rian-eduardo-dias-lopes-4296511b7/'"
+          />
+          <img
+            src="assets/img/github.png"
+            alt="Perfil Github"
+            class="icon"
+            onclick="location.href='https://www.github.com/rianpuc'"
+          />
+          <img
+            src="assets/img/instagram.png"
+            alt="Perfil instagram"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/rian.dll'"
+          />
         </div>
-        <div class="apresentacao">
-            <p id="nome" class="apresentacao_p1"></p>
-            <p id="descricao" class="apresentacao_p2"></p>
-            <p class="apresentacao_p2"><span>Localização:</span> Belo Horizonte, MG</p>
-            <div id="redes-container">
-                <img src="assets/img/linkedin.png" alt="Perfil Linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/rian-eduardo-dias-lopes-4296511b7/'">
-                <img src="assets/img/github.png" alt="Perfil Github" class="icon" onclick="location.href='https://www.github.com/rianpuc'">
-                <img src="assets/img/instagram.png" alt="Perfil instagram" class="icon" onclick="location.href='https://www.instagram.com/rian.dll'">
-            </div>
-        </div>
+      </div>
     </section>
     <section id="repositorios">
-        <h1 class="title">Repositorios</h1>
-        <div id="repositorios_section" class="row"></div>
+      <h1 class="title">Repositorios</h1>
+      <div id="repositorios_section" class="row no-gutters"></div>
     </section>
     <script src="assets/scripts/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

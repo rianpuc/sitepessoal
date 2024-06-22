@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Repositório</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles_repo.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="navegacao">
+      <div class="nome_nav">Rian</div>
+      <div>
+        <ul class="nav-itens">
+          <li><a href="index.html#perfil">Perfil</a></li>
+          <li><a href="index.html#repositorios">Repositorios</a></li>
+          <li><a href="index.html#conteudo-sugerido">Conteudo Sugerido</a></li>
+          <li><a href="index.html#colegas">Colegas de Trabalho</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="nav-mobile">
+      <div class="nome_nav">Rian</div>
+      <div class="menu-mobile">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-itens">
+          <li><a href="#perfil" onclick="toggleMenu()">Perfil</a></li>
+          <li>
+            <a href="#repositorios" onclick="toggleMenu()">Repositorios</a>
+          </li>
+          <li>
+            <a href="#conteudo-sugerido" onclick="toggleMenu()"
+              >Conteudo Sugerido</a
+            >
+          </li>
+          <li>
+            <a href="#colegas" onclick="toggleMenu()">Colegas de Trabalho</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="repo-details" class="card"></div>
+    </div>
+  </body>
+  <script src="assets/scripts/apprepo.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
