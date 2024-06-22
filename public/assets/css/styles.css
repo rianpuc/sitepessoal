@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -145,7 +146,7 @@ section {
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content;
+    /*min-height: fit-content;*/
 }
 
 /* Perfil Secao */
@@ -219,7 +220,7 @@ section {
     padding: 20px;
 }
 
-#repositorios_section {
+#repositorios_section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
