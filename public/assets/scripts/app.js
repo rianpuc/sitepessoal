@@ -13,6 +13,33 @@ document.addEventListener("DOMContentLoaded", function() {
         return text;
     }
 
+    function Carousel(item, isActive) {
+        const carouselInner = document.getElementById('carousel-inner');
+        const carouselItem = document.createElement('div');
+        carouselItem.className = `carousel-item ${isActive ? 'active' : ''}`;
+        carouselItem.innerHTML = `
+            <iframe src="https://www.youtube.com/embed/${item.videoUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="carousel-caption d-none d-md-block"></div>
+        `;
+        carouselInner.appendChild(carouselItem);
+    }
+
+    function ColegaDeTrabalho(colega) {
+        const colegasSection = document.getElementById('colegas_section');
+        const colegaCard = document.createElement('div');
+        colegaCard.className = 'col-lg-4 col-md-6 col-sm-12 mb-4';
+        colegaCard.innerHTML = `
+            <div class="card h-100">
+                <img class="card-img-top" src="${colega.fotoUrl}" alt="Foto de ${colega.nome}">
+                <div class="card-body">
+                    <h4 class="card-title">${colega.nome}</h4>
+                    <p class="card-text">GitHub: <a href="${colega.githubUrl}" target="_blank">${colega.githubUrl}</a></p>
+                </div>
+            </div>
+        `;
+        colegasSection.appendChild(colegaCard);
+    }
+
     fetch('https://api.github.com/users/rianpuc/repos')
     .then(response => response.json())
     .then(data => {
@@ -20,13 +47,16 @@ document.addEventListener("DOMContentLoaded", function() {
         data.forEach(repo => {
             const repoElement = document.createElement('div');
             const descricao = cortarTexto(repo.description || 'Sem descrição', 20);
-            repoElement.className = 'col-md-4';
+            repoElement.className = 'col-lg-4 col-md-6 col-sm-12 mb-4';
             repoElement.innerHTML = `
-                <div class="card mb-4">
+                <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">${repo.name}</h5>
                         <p class="card-text">${descricao}</p>
-                        <a href="repo.html?id=${repo.id}" class="btn btn-primary" target="_blank">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="repo.html?id=${repo.id}" class="btn btn-primary btn-sm" target="_blank">Ver detalhes</a>
+                        </div>
                     </div>
                 </div>
             `;
@@ -34,6 +64,25 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     })
     .catch(error => console.error('Erro ao obter os repositórios:', error));
+
+    fetch('http://localhost:3000/conteudos')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach((item, index) => {
+            Carousel(item, index === 0);
+        });
+    })
+    .catch(error => console.error('Erro ao obter os conteúdos:', error));
+
+    fetch('http://localhost:3000/colegas')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(colega => {
+            ColegaDeTrabalho(colega);
+        });
+    })
+    .catch(error => console.error('Erro ao obter os colegas de trabalho:', error));
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {

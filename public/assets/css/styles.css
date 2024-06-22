@@ -214,6 +214,8 @@ section {
 
 .title {
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 20px;
 }
 
@@ -225,12 +227,14 @@ section {
 }
 
 .card {
+    flex: 1 1 300px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 5px;
-    padding: 15px;
-    width: 300px;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -247,9 +251,38 @@ section {
 .card a {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 15px;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.card-body{
+    max-height: 200px;
+    overflow: hidden;
+}
+
+/* Carousel */
+
+#carouselExample {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.carousel-inner iframe {
+    width: 100%;
+    height: 700px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+#colegas_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }

@@ -1,0 +1,16 @@
+{
+  "name": "sitepessoal",
+  "version": "1.0.0",
+  "description": "Trabalho do Site Pessoal com Backend JSONServer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Rian",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "json-server": "^0.17.4"
+  }
+}

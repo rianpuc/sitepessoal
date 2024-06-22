@@ -1,0 +1,59 @@
+{
+    "conteudos": [
+        {
+            "id": 1,
+            "titulo": "coding in c until I go completely insane",
+            "descricao": "video bom sou eu",
+            "imageUrl": "https://img.youtube.com/vi/TQDHGswF67Q/hqdefault.jpg",
+            "videoUrl": "TQDHGswF67Q"
+        },
+        {   
+            "id": 2,
+            "titulo": "coding in c until my program crashes",
+            "descricao": "otimo video tambem",
+            "imageUrl": "https://img.youtube.com/vi/mnqU9YdjX_c/hqdefault.jpg",
+            "videoUrl": "mnqU9YdjX_c"
+        },
+        {
+            "id": 3,
+            "titulo": "coding in c until my program is unsafe",
+            "descricao": "isso eh intankavel",
+            "imageUrl": "https://img.youtube.com/vi/oTEiQx88B2U/hqdefault.jpg",
+            "videoUrl": "oTEiQx88B2U"
+        },
+        {
+            "id": 4,
+            "titulo": "you can become a GIGACHAD assembly programmer in 10 minutes (try it RIGHT NOW)",
+            "descricao": "aprendam assembly",
+            "imageUrl": "https://img.youtube.com/vi/6S5KRJv-7RU/hqdefault.jpg",
+            "videoUrl": "6S5KRJv-7RU"
+        },
+        {
+            "id": 5,
+            "titulo": "ISSO VAI TE FAZER TER SUCESSO COM AS MULHERES",
+            "descricao": "super importante",
+            "imageUrl": "https://img.youtube.com/vi/WucNIf1XPf4/hqdefault.jpg",
+            "videoUrl": "WucNIf1XPf4"
+        }
+    ],
+    "colegas": [
+        {
+            "id": 1,
+            "fotoUrl": "https://avatars.githubusercontent.com/u/151387181",
+            "nome": "Luiz Henrique",
+            "githubUrl": "https://github.com/LuizHenriquePVieira"
+          },
+          {
+            "id": 2,
+            "fotoUrl": "https://avatars.githubusercontent.com/u/85091282",
+            "nome": "Arthur Chaves",
+            "githubUrl": "https://github.com/AHChaves"
+          },
+          {
+            "id": 3,
+            "fotoUrl": "https://avatars.githubusercontent.com/u/147620309",
+            "nome": "Julio Lage",
+            "githubUrl": "https://github.com/JulioLage-Alx"
+          }
+    ]
+}
